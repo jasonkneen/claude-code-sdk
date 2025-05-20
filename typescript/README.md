@@ -10,10 +10,17 @@ First, install the Claude Code CLI:
 npm install -g @anthropic-ai/claude-code
 ```
 
-Then install the wrapper:
+Then install the wrapper using one of these methods:
 
 ```bash
+# Using npm
 npm install claude-code-sdk
+
+# Using yarn
+yarn add claude-code-sdk
+
+# Using pnpm
+pnpm add claude-code-sdk
 ```
 
 ## Setup
