@@ -1,0 +1,43 @@
+{
+  "name": "claude-code-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript wrapper for Claude Code SDK",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:dev": "tsc --watch",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --check \"src/**/*.ts\"",
+    "format:fix": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepare-package": "node ./scripts/prepare-package.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude",
+    "anthropic",
+    "ai",
+    "code",
+    "sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.15.19",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  },
+  "peerDependencies": {
+    "@anthropic-ai/claude-code": "*"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
