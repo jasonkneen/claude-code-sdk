@@ -16,6 +16,14 @@ Then install the wrapper:
 pip install claude-code-sdk
 ```
 
+For development installation:
+
+```bash
+git clone https://github.com/anthropics/claude-code-sdk.git
+cd claude-code-sdk/python
+pip install -e .
+```
+
 ## Setup
 
 You'll need an Anthropic API key to use Claude Code. You can either set it as an environment variable:
@@ -213,6 +221,19 @@ claude = ClaudeCode(options={
 
 - Python 3.7+
 - @anthropic-ai/claude-code CLI installed
+
+## Development
+
+### Publishing to PyPI
+
+To publish a new version to PyPI, use the provided script:
+
+```bash
+cd python
+./scripts/publish.sh
+```
+
+For detailed instructions, see [PUBLISHING.md](PUBLISHING.md).
 
 ## License
 
